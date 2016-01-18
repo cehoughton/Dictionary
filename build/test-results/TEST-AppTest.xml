@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-01-18T19:44:39" hostname="epicodus-33.local" time="0.003">
+<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-01-18T22:23:24" hostname="epicodus-33.local" time="0.001">
   <properties/>
-  <testcase name="puzzle_returnDashForAEIO_B___T_" classname="AppTest" time="0.0"/>
+  <testcase name="puzzle_returnDashForAEIO_B___T_" classname="AppTest" time="0.001"/>
   <testcase name="puzzle_returnDashForAEIOU_B___T__" classname="AppTest" time="0.0"/>
   <testcase name="puzzleConverter_returnUpperCaseForbt_BT" classname="AppTest" time="0.0"/>
   <testcase name="puzzle_returnDashForAEI_B__T_" classname="AppTest" time="0.0"/>
   <testcase name="puzzle_returnDashForA_andE_B_T_" classname="AppTest" time="0.0"/>
-  <testcase name="puzzle_returnDashForA_B_Dash_T" classname="AppTest" time="0.001"/>
+  <testcase name="puzzle_returnDashForA_B_Dash_T" classname="AppTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
