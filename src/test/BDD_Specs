@@ -1,7 +1,3 @@
-Will convert letters to uppercase
-Will convert A to a dash
-Will convert E to a dash
-Will convert I to a dash
-Will convert O to a dash
-Will convert U to a dash
-Will return string with all vowels converted to dashes creating a puzzle
+Allow user to create defintions
+Add each defintion to a word
+Display all defintions of word
