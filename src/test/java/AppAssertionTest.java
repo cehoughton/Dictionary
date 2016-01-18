@@ -17,24 +17,32 @@ public class AppAssertionTest extends FluentTest {
     return webDriver;
   }
 
-  //  @ClassRule
-  //  public static ServerRule server = new ServerRule();
-   //
-  //  @Test
-  //  public void rootTest() {
-  //    goTo("http://localhost:4567");
-  //    assertThat(pageSource()).contains("newpuzzle");
-  //  }
-   //
-   //
-   //
-  //  @Test
-  //  public void puzzleCreatedTest() {
-  //    goTo("http://localhost:4567/");
-  //    fill("#word").with("wowo");
-  //    submit(".btn");
-  //    assertThat(pageSource()).contains("W-W-");
-  //  }
+    @ClassRule
+    public static ServerRule server = new ServerRule();
+
+    @Test
+    public void rootTest() {
+      goTo("http://localhost:4567/");
+      assertThat(pageSource()).contains("Definitions");
+    }
+
+    @Test
+    public void defintionIsCreatedTest() {
+      goTo("http://localhost:4567/");
+      fill("#description").with("A tasty snack");
+      submit(".btn");
+      assertThat(pageSource()).contains("add new");
+    }
+
+    @Test
+    public void defintionIsSavedTest() {
+    goTo("http://localhost:4567/");
+    fill("#description").with("A tasty snack");
+    submit(".btn");
+    click("a", withText("add new"));
+    assertThat(pageSource()).contains("A tasty snack");
+  }
+
    //
   //  @Test
   //  public void puzzleLeavesConsonantsTest() {

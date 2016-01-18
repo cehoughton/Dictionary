@@ -16,17 +16,27 @@ public class App {
      return new ModelAndView(model, layout);
   }, new VelocityTemplateEngine());
 
-  get("/output", (request, response) -> {
-    Map<String, Object> model = new HashMap<String, Object>();
-    model.put("template", "templates/output.vtl");
+  post("/output", (request,response) -> {
+     Map<String, Object> model =new HashMap<String, Object>();
 
-    String inputString = request.queryParams("word");
-    String puzzleOut = puzzleConverter(inputString);
+     String description = request.queryParams("description");
+     Definition newDef = new Definition(description);
+     request.session().attribute("Definition", newDef);
 
-    model.put("word", inputString);
-    model.put("pword", puzzleOut);
-    return new ModelAndView(model, layout);
- }, new VelocityTemplateEngine());
+     model.put("template", "templates/output.vtl");
+     return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+ //  get("/output", (request, response) -> {
+ //    Map<String, Object> model = new HashMap<String, Object>();
+ //    model.put("template", "templates/output.vtl");
+ //
+ //    String inputString = request.queryParams("word");
+ //    String puzzleOut = puzzleConverter(inputString);
+ //
+ //    model.put("word", inputString);
+ //    model.put("pword", puzzleOut);
+ //    return new ModelAndView(model, layout);
+ // }, new VelocityTemplateEngine());
 
 
 
