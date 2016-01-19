@@ -1,4 +1,4 @@
-Word Puzzle Page
+Dictionary Page
 Using java methods to create a dictionary. Original draft January 2016.
 
 By Chris Houghton
