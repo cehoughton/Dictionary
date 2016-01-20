@@ -11,6 +11,7 @@ public void getWord_returnsWord_true() {
   assertEquals("Taco", testWord.getWord());
 }
 
+<<<<<<< HEAD
 @Test
 public void getId_returnsWordId() {
   Word testWord = new Word("Taco");
@@ -23,5 +24,7 @@ public void getDef_initiallyReturnsempptyArrayList() {
   assertTrue(testWord.getDef() instanceof ArrayList);
 }
 
+=======
+>>>>>>> 767626a1a16b2ed956b123a5f77fe31530313dc5
 
 }
