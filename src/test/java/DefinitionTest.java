@@ -58,5 +58,3 @@ public class DefinitionTest {
     assertEquals(Definition.all().size(), 0);
   }
 }
-
-}
