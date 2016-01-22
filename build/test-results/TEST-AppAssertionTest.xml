@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppAssertionTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2016-01-22T02:30:29" hostname="epicodus-30.local" time="0.333">
+<testsuite name="AppAssertionTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2016-01-22T21:29:19" hostname="epicodus-38.local" time="0.289">
   <properties/>
-  <testcase name="defintionIsSavedTest" classname="AppAssertionTest" time="0.275">
-    <failure message="org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'&#10;System info: host: 'epicodus-30.local', ip: '10.46.8.79', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+  <testcase name="defintionIsSavedTest" classname="AppAssertionTest" time="0.251">
+    <failure message="org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'&#10;System info: host: 'epicodus-38.local', ip: '10.46.9.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'epicodus-30.local', ip: '10.46.8.79', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'
+System info: host: 'epicodus-38.local', ip: '10.46.9.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'
 Driver info: driver.version: unknown
 	at org.fluentlenium.core.domain.FluentList.text(FluentList.java:93)
 	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:46)
@@ -61,8 +61,8 @@ Driver info: driver.version: unknown
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="rootTest" classname="AppAssertionTest" time="0.037">
-    <failure message="java.lang.AssertionError: &#10;Expecting:&#10; &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;title&gt;&#13;&#10;      Dictionary&#13;&#10;    &lt;/title&gt;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;&#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;div class=&quot;container&quot;&gt;&#13;&#10;      &lt;h1&gt;&#13;&#10;        Build Your Own Dictionary!&#13;&#10;      &lt;/h1&gt;&#13;&#10;      &lt;a href=&quot;/word-form&quot;&gt;&#13;&#10;        O.K!&#13;&#10;      &lt;/a&gt;&#13;&#10;      &lt;form action=&quot;/yourdictionary&quot; method=&quot;post&quot;&gt;&#13;&#10;        &lt;div class=&quot;form-group&quot;&gt;&#13;&#10;          &lt;label for=&quot;inputDef&quot;&gt;&#13;&#10;            Enter definition here&#13;&#10;          &lt;/label&gt;&#13;&#10;          &lt;input id=&quot;inputDef&quot; name=&quot;inputDef&quot; class=&quot;form-control&quot; type=&quot;text&quot;/&gt;&#13;&#10;        &lt;/div&gt;&#13;&#10;        &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;&#13;&#10;          Go!&#13;&#10;        &lt;/button&gt;&#13;&#10;      &lt;/form&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;&quot;&gt;&#10;to contain:&#10; &lt;&quot;Definitions&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="rootTest" classname="AppAssertionTest" time="0.02">
+    <failure message="java.lang.AssertionError: &#10;Expecting:&#10; &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;title&gt;&#13;&#10;      Dictionary&#13;&#10;    &lt;/title&gt;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;&#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;div class=&quot;container&quot;&gt;&#13;&#10;      &lt;h1&gt;&#13;&#10;        Here is your Dictionary!&#13;&#10;      &lt;/h1&gt;&#13;&#10;      &lt;a href=&quot;/word-form&quot;&gt;&#13;&#10;        Add a word&#13;&#10;      &lt;/a&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;&quot;&gt;&#10;to contain:&#10; &lt;&quot;Definitions&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
 Expecting:
  &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;html&gt;
@@ -75,22 +75,11 @@ Expecting:
   &lt;body&gt;
     &lt;div class=&quot;container&quot;&gt;
       &lt;h1&gt;
-        Build Your Own Dictionary!
+        Here is your Dictionary!
       &lt;/h1&gt;
       &lt;a href=&quot;/word-form&quot;&gt;
-        O.K!
+        Add a word
       &lt;/a&gt;
-      &lt;form action=&quot;/yourdictionary&quot; method=&quot;post&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-          &lt;label for=&quot;inputDef&quot;&gt;
-            Enter definition here
-          &lt;/label&gt;
-          &lt;input id=&quot;inputDef&quot; name=&quot;inputDef&quot; class=&quot;form-control&quot; type=&quot;text&quot;/&gt;
-        &lt;/div&gt;
-        &lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;
-          Go!
-        &lt;/button&gt;
-      &lt;/form&gt;
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -149,11 +138,11 @@ to contain:
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="defintionIsCreatedTest" classname="AppAssertionTest" time="0.01">
-    <failure message="org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'&#10;System info: host: 'epicodus-30.local', ip: '10.46.8.79', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+  <testcase name="defintionIsCreatedTest" classname="AppAssertionTest" time="0.008">
+    <failure message="org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'&#10;System info: host: 'epicodus-38.local', ip: '10.46.9.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'epicodus-30.local', ip: '10.46.8.79', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'
+System info: host: 'epicodus-38.local', ip: '10.46.9.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.2', java.version: '1.8.0_66'
 Driver info: driver.version: unknown
 	at org.fluentlenium.core.domain.FluentList.text(FluentList.java:93)
 	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:46)
@@ -213,10 +202,10 @@ Driver info: driver.version: unknown
   <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@760ac998{HTTP/1.1}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@1d9b34db{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@78154d1b by 
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@760ac998{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@65aecbe by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@1d9b34db{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - done
 ]]></system-err>
 </testsuite>

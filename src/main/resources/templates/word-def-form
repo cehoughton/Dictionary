@@ -1,8 +1,9 @@
-<h1>Definition</h1>
-
+<h1>Add a definition to $word.getWord() </h1>
 
 
 <form action="/individualword" method="post">
+  <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+  
   <div class="form-group">
     <label for="inputDef">Enter definition here</label>
     <input id="inputDef" name="inputDef" class="form-control" type="text">
