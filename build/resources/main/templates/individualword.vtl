@@ -1,0 +1,12 @@
+
+<h1>$word.getWord()</h1>
+
+<ul>
+#foreach($definition in $definitions)
+ <li>$definition.getInputDef()</li>
+ #end
+</ul>
+
+<br>
+<a href="/def-form">Add A Definition</a>
+<a href="/">View All Words</a>

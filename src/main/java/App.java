@@ -14,24 +14,28 @@
 
    get("/", (request, response) -> {
      Map<String, Object> model = new HashMap<String, Object>();
-
-
      model.put("template", "templates/index.vtl");
-
      return new ModelAndView(model, layout);
   }, new VelocityTemplateEngine());
 
-   post("/newdef", (request,response) -> {
-      Map<String, Object> model =new HashMap<String, Object>();
-      Word word = find(Integer.parseInt(request.queryParams("word")))
-      ArrayList<Definition> defs = word.getDefinitions();
+  get("/word-form", (request, response) -> {
+    Map<String, Object> model = new HashMap<String, Object>();
+    model.put("template", "templates/word-form.vtl");
+    return new ModelAndView(model, layout);
+ }, new VelocityTemplateEngine());
 
-      if (defs == null) {
-        defs = new ArrayList<Definition>();
-        request.session().attribute("defs", newDef);
-      }
-    }
+
+   post("/", (request,response) -> {
+     Map<String, Object> model = new HashMap<String, Object>();
+     Word word = new Word(request.queryParams("inputWord"));
+
+     model.put("words", Word.all());
+     model.put("template", "templates/index.vtl");
+     return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
   }
+}
    //
   //     String description = request.queryParams("description");
   //     Definition newDef = new Definition(description);
