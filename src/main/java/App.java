@@ -34,6 +34,35 @@
      return new ModelAndView(model, layout);
    }, new VelocityTemplateEngine());
 
+   get("/index/:id/def-form", (request, response) -> {
+     Map<String, Object> model = new HashMap<String, Object>();
+     Word word = Word.find(Integer.parseInt(request.params(":id")));
+     model.put("word", word);
+     model.put("template", "templates/individualform.vtl");
+     return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
+   get("/def-form", (request, response) -> {
+     Map<String, Object> model = new HashMap<String, Object>();
+
+
+     model.put("template", "templates/def-form.vtl");
+     return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
+   post("/index/:id", (request,response) -> {
+     Map<String, Object> model = new HashMap<String, Object>();
+     Definition definition = new Definition(request.queryParams("inputDef"));
+
+     model.put("words", Word.all());
+     model.put("definitions", Definition.all());
+     model.put("template", "templates/individualword.vtl");
+     return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
+
+
+
   }
 }
    //
