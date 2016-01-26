@@ -24,26 +24,45 @@ public class AppAssertionTest extends FluentTest {
     @Test
     public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Definitions");
+      assertThat(pageSource()).contains("Build your Dictionary!");
     }
 
     @Test
+    public void wordIsCreatedTest() {
+    goTo("http://localhost:4567");
+
+    fill("#inputWord").with("Taco");
+    submit("btn");
+    assertThat(pageSource()).contains("Taco");
+}
+
+// @Test
+//   public void categoryIsDisplayedTest() {
+//   Word newWord = new Word("Taco");
+//   newWord.save();
+//   String wordPath = String.format("http://localhost:4567/%d", newWord.getId());
+//   goTo(wordPath);
+//   assertThat(pageSource()).contains("Taco");
+
+
+
+    @Test
     public void defintionIsCreatedTest() {
-      goTo("http://localhost:4567/");
-      fill("#description").with("A tasty snack");
+      goTo("http://localhost:4567/words/:id");
+      fill("#inputDef").with("A tasty snack");
       submit(".btn");
-      assertThat(pageSource()).contains("add new");
+      assertThat(pageSource()).contains("A tasty snack");
     }
 
     @Test
     public void defintionIsSavedTest() {
-    goTo("http://localhost:4567/");
-    fill("#description").with("A tasty snack");
+    goTo("http://localhost:4567/definitions/:id");
+    fill("#inputDef").with("A tasty snack");
     submit(".btn");
-    click("a", withText("add new"));
+    // click("a", withText("add new"));
     assertThat(pageSource()).contains("A tasty snack");
   }
-
+}
    //
   //  @Test
   //  public void puzzleLeavesConsonantsTest() {
@@ -52,4 +71,3 @@ public class AppAssertionTest extends FluentTest {
   //    submit(".btn");
   //    assertThat(pageSource()).contains("TRFH TGG");
   //  }
- }
