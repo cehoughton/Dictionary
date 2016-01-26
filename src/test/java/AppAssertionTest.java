@@ -36,15 +36,15 @@ public class AppAssertionTest extends FluentTest {
     assertThat(pageSource()).contains("Taco");
 }
 
-// @Test
-//   public void categoryIsDisplayedTest() {
-//   Word newWord = new Word("Taco");
-//   newWord.save();
-//   String wordPath = String.format("http://localhost:4567/%d", newWord.getId());
-//   goTo(wordPath);
-//   assertThat(pageSource()).contains("Taco");
+@Test
+  public void wordIsDisplayedTest() {
+  Word word = new Word("Taco");
+  word.save();
+  String wordPath = String.format("http://localhost:4567/%d", word.getId());
+  goTo(wordPath);
+  assertThat(pageSource()).contains("Taco");
 
-
+}
 
     @Test
     public void defintionIsCreatedTest() {
@@ -63,11 +63,3 @@ public class AppAssertionTest extends FluentTest {
     assertThat(pageSource()).contains("A tasty snack");
   }
 }
-   //
-  //  @Test
-  //  public void puzzleLeavesConsonantsTest() {
-  //    goTo("http://localhost:4567/");
-  //    fill("#word").with("trfh tgg");
-  //    submit(".btn");
-  //    assertThat(pageSource()).contains("TRFH TGG");
-  //  }
