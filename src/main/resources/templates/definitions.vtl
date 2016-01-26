@@ -1,0 +1,8 @@
+<h1>$word.getWord()</h1>
+
+<ul>
+#foreach($definition in $definitions)
+ <li>$definition.getInputDef()</li>
+ #end
+</ul>
+<h1><a href="/words/$word.getId()"> Add a definition to $word.getWord()</a> </h1>
