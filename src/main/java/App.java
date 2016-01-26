@@ -18,9 +18,9 @@
      return new ModelAndView(model, layout);
   }, new VelocityTemplateEngine());
 
-  get("/word-form", (request, response) -> {
+  get("/", (request, response) -> {
     Map<String, Object> model = new HashMap<String, Object>();
-    model.put("template", "templates/word-form.vtl");
+    model.put("template", "templates/index.vtl");
     return new ModelAndView(model, layout);
  }, new VelocityTemplateEngine());
 
@@ -51,7 +51,7 @@
      return new ModelAndView(model, layout);
    }, new VelocityTemplateEngine());
 
-   get("/words/:id/new-word-def-form", (request, response) -> {
+   get("/words/:id/new", (request, response) -> {
      Map<String, Object> model = new HashMap<String, Object>();
      Word word = Word.find(Integer.parseInt(request.params(":id")));
      ArrayList<Definition> definitions = word.getDefinitions();
@@ -80,8 +80,9 @@
 
    post("/words/:id", (request,response) -> {
      Map<String, Object> model = new HashMap<String, Object>();
-     Definition definition = new Definition(request.queryParams("inputDef"));
-
+     Word word = Word.find(Integer.parseInt(request.params(":id")));
+     Definition newDefinition = new Definition(request.queryParams("inputDef"));
+     word.addDefinition(newDefinition);
      model.put("words", Word.all());
      model.put("definitions", Definition.all());
      model.put("template", "templates/individualword.vtl");
