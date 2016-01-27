@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DefinitionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-01-26T22:11:45" hostname="epicodus-30.local" time="0.001">
+<testsuite name="DefinitionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-01-27T19:35:02" hostname="epicodus-31.local" time="0.001">
   <properties/>
   <testcase name="defintion_instantiatesCorrectly_true" classname="DefinitionTest" time="0.0"/>
   <testcase name="newId_DefinitionInstantiateWithAnID_true" classname="DefinitionTest" time="0.0"/>
-  <testcase name="isCompleted_isFalseAfterInstantiaon_false" classname="DefinitionTest" time="0.0"/>
   <testcase name="find_returnsDefinitionWithSameId_secondDefinition" classname="DefinitionTest" time="0.0"/>
-  <testcase name="all_returnsAllInstancesOfDefinition_true" classname="DefinitionTest" time="0.0"/>
+  <testcase name="all_returnsAllInstancesOfDefinition_true" classname="DefinitionTest" time="0.001"/>
   <testcase name="find_returnsNullWhenNoDefinitionFound_null" classname="DefinitionTest" time="0.0"/>
   <testcase name="clear_emptiesAllDefinitionsFromArrayList" classname="DefinitionTest" time="0.0"/>
   <testcase name="definition_instantiatesWithDescription_true" classname="DefinitionTest" time="0.0"/>

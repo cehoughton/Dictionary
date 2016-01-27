@@ -18,11 +18,11 @@ public class DefinitionTest {
       assertEquals("A tasty snack", myDefinition.getInputDef());
   }
 
-  @Test
-  public void isCompleted_isFalseAfterInstantiaon_false() {
-  Definition myDefinition = new Definition("A tasty snack");
-    assertEquals(false, myDefinition.isCompleted());
-  }
+  // @Test
+  // public void isCompleted_isFalseAfterInstantiaon_false() {
+  // Definition myDefinition = new Definition("A tasty snack");
+  //   assertEquals(false, myDefinition.isCompleted());
+  // }
 
 
   @Test

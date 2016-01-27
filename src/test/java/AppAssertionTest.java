@@ -34,32 +34,21 @@ public class AppAssertionTest extends FluentTest {
     fill("#inputWord").with("Taco");
     submit("btn");
     assertThat(pageSource()).contains("Taco");
-}
-
-@Test
-  public void wordIsDisplayedTest() {
-  Word word = new Word("Taco");
-  word.save();
-  String wordPath = String.format("http://localhost:4567/%d", word.getId());
-  goTo(wordPath);
-  assertThat(pageSource()).contains("Taco");
-
-}
-
-    @Test
-    public void defintionIsCreatedTest() {
-      goTo("http://localhost:4567/words/:id");
-      fill("#inputDef").with("A tasty snack");
-      submit(".btn");
-      assertThat(pageSource()).contains("A tasty snack");
     }
 
     @Test
-    public void defintionIsSavedTest() {
-    goTo("http://localhost:4567/definitions/:id");
-    fill("#inputDef").with("A tasty snack");
+    public void defintionFormIsDisplayed() {
+      Word word = new Word("dog");
+      goTo("http://localhost:4567/words/" + word.getId());
+      assertThat(pageSource()).contains("dog");
+    }
+
+    @Test
+    public void defintionIsIsAddedToWord() {
+    Word word = new Word("cat");
+    goTo("http://localhost:4567/words/" + word.getId());
+    fill("#inputDef").with("animal");
     submit(".btn");
-    // click("a", withText("add new"));
-    assertThat(pageSource()).contains("A tasty snack");
+    assertThat(pageSource()).contains("animal");
+    }
   }
-}
